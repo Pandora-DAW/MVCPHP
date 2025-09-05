@@ -1,4 +1,7 @@
 <?php
+
+require_once('confif/Database.php');
+
 class Usuario {
     private $id; // id autonumérico
     private $nombreUsuario;
@@ -53,9 +56,16 @@ class Usuario {
             } else {
                 //actualizar
               $stmt = $this->bd->prepare("UPDATE usuarios SET nombre_usuario=?, email=?, contrasena=?) WHERE id=?");  
-              $stmt->execute([$this->nombreUsuario, $this->email, $this->contrasena, $this->id]);
+              $resultado=$stmt->execute([$this->nombreUsuario, $this->email, $this->contrasena, $this->id]);
             }
+            return $resultado;
         }
+    }
+
+            public function borrar() {
+                $stmt = $this->bd->prepare("DELETE FROM usuarios WHERE id = ?");
+                return $stmt->execute([$this->id]);
+            }     
 
      }
 
