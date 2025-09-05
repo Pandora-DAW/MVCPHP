@@ -10,9 +10,10 @@
         <div><label for="contrasena">Contraseña:</label>
         <input type="pasword" name="contrasena" id="contrasena" required>
     </div>
+    <div><input type="submit" value="Registrarse"></div>
 
 
-/** Quedo pendiente de completar el formulario */
+/** Quedo pendiente de completar el formulario. Realizado */
 
 
 </form>
