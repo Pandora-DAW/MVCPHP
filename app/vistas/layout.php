@@ -16,7 +16,7 @@
         </nav>
 
         <div class="botones-login">
-            <a href="/registro">Login</a>
+            <a href="/registro">Registrarse</a>
         </div>
     </header>
 
