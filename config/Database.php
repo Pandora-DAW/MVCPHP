@@ -11,6 +11,9 @@ class Database {
     private $bd;
 
     private function __construct(){
+        // mysql: localhost: 3306; dbname=NOMBREBD
+        // mysql: host=127.0.0.1; port=3307; dbname=users_web
+        
         $this->bd = new PDO(
             'mysql:'.HOST.':'.PORT.';dbname='.DBNAME,USER, PASSWORD);
 
