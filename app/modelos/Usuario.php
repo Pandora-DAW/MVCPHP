@@ -67,7 +67,7 @@ class Usuario {
                 return $stmt->execute([$this->id]);
             }     
 
-     }
+     
 
     /**
      * Get the value of id
